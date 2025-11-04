@@ -1,0 +1,48 @@
+/*  Styling for the product images 
+    .block-4-image img {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+     On hover, scale the image and add a shadow 
+    .block-4-image img:hover {
+        transform: scale(1.1);  Slightly enlarges the image 
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);  Adds a shadow effect 
+    }*/
+
+.block-4-image {
+        position: relative; /* For positioning the button over the image */
+    }
+
+    /* Add to Cart button styling */
+    .add-to-cart-btn {
+        display: none; /* Initially hidden */
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px 20px;
+        background-color: #795BEE;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: opacity 0.3s ease;
+        opacity: 0; /* Initially invisible */
+    }
+
+    /* Show the Add to Cart button on hover */
+    .block-4-image:hover .add-to-cart-btn {
+        display: block;
+        opacity: 1; /* Button becomes visible */
+    }
+
+    /* Styling for the product images when hovered */
+    .block-4-image img {
+        transition: transform 0.3s ease;
+    }
+
+    .block-4-image img:hover {
+        transform: scale(1.1); /* Slightly enlarge image on hover */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
