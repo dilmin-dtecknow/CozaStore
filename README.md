@@ -1,74 +1,192 @@
-# CozaStore – E-Commerce Web Application
+# CozaStore
 
-CozaStore is a simple e-commerce web application developed as a Web 2 project.  
-The system allows users to browse products and simulate an online shopping experience.
+CozaStore is a Java EE based e-commerce web application that allows customers to browse products, manage their shopping cart, and place orders through a user-friendly web interface. The project follows the MVC architecture using JSP, Servlets, and JDBC.
 
-## 📌 Project Overview
-CozaStore is designed to demonstrate the fundamentals of web application development using Java and standard web technologies.  
-It follows a basic layered structure and includes front-end and back-end components.
+---
 
-## 🛠️ Technologies Used
-- Java (Servlet/JSP)
+## Features
+
+- User Registration & Login
+- Product Catalog
+- Product Search
+- Product Categories
+- Shopping Cart
+- Checkout Process
+- Order Management
+- User Profile Management
+- Admin Dashboard
+- Product Management (CRUD)
+- Customer Management
+- Responsive User Interface
+
+---
+
+## Technologies Used
+
+### Backend
+- Java
+- Java EE (Servlets)
+- JSP
+- JDBC
+
+### Frontend
 - HTML5
-- CSS3 / SCSS
+- CSS3
 - JavaScript
-- Apache Ant (build tool)
-- NetBeans project structure
+- Bootstrap
 
-## 📂 Project Structure
+### Database
+- MySQL
+
+### Server
+- GlassFish / Payara
+
+### Build Tool
+- Apache Ant
+
+---
+
+## Project Structure
+
 ```
 CozaStore/
 │
-├── src/ # Java source files (servlets, logic)
-├── web/ # JSP, HTML, CSS, JS files
-├── lib/ # External libraries
-├── build/ # Compiled output
-├── nbproject/ # NetBeans project configuration
-├── build.xml # Ant build configuration
+├── src/                 # Java source code
+├── web/                 # JSP pages, CSS, JS, Images
+├── lib/                 # External libraries
+├── test/                # Test classes
+├── build.xml            # Apache Ant build file
 └── README.md
 ```
 
-## ⚙️ Features
-- Product listing interface
-- Basic e-commerce UI
-- Responsive design
-- Front-end shopping experience
+---
 
-## 🚀 Getting Started
+## MVC Architecture
 
-### Prerequisites
-Make sure you have the following installed:
+```
+Browser
+    │
+    ▼
+JSP Pages
+    │
+    ▼
+Servlet (Controller)
+    │
+    ▼
+DAO Layer
+    │
+    ▼
+MySQL Database
+```
 
-- Java JDK 8 or higher
-- Apache Tomcat or any Java web server
-- NetBeans or IntelliJ (optional)
--
+---
 
-<img width="1920" height="1080" alt="Screenshot 2024-09-19 114221" src="https://github.com/user-attachments/assets/067755e3-5043-402d-83c5-bf69bd9f7fa7" />
+## Prerequisites
 
-<img width="1920" height="1080" alt="Screenshot 2024-09-19 114350" src="https://github.com/user-attachments/assets/859f7131-6d69-4a6d-9cdc-7861aa199a19" />![Uploading Screenshot 2024-09-19 113425.png…]()
-<img width="1920" height="1080" alt="Screenshot 2024-09-19 113410" src="https://github.com/user-attachments/assets/04a097f7-5af1-4b73-80f0-493b97c1e743" />
-<img width="1920" height="1080" alt="Screenshot 2024-09-19 113437" src="https://github.com/user-attachments/assets/037ca7a1-b2eb-4c7e-9e3f-3669fed3d80d" />
+Before running this project, install:
 
+- Java JDK 11 or later
+- Apache Ant
+- MySQL Server
+- GlassFish Server or Payara Server
+- NetBeans / IntelliJ IDEA / Eclipse
 
-<img width="1920" height="1080" alt="Screenshot 2024-09-19 112622" src="https://github.com/user-attachments/assets/922052d1-070a-48d7-91be-195ea72c0d92" />
-<img width="1920" height="1080" alt="Screenshot 2024-09-19 114602" src="https://github.com/user-attachments/assets/097fca4a-80c1-4ee8-97c1-40ada7335e62" />
+---
 
-<img width="1308" height="775" alt="Screenshot 2024-09-13 174319" src="https://github.com/user-attachments/assets/a5a96742-408f-4ad5-b1da-da1a9bf3967e" />
+## Installation
 
-<img width="1920" height="1080" alt="Screenshot 2024-09-19 114626" src="https://github.com/user-attachments/assets/796ccb6c-6d59-4031-b432-ccafa1dd1f17" />
+### 1. Clone the repository
 
+```bash
+git clone https://github.com/yourusername/CozaStore.git
+```
 
-📚 Learning Purpose
+### 2. Import the project
 
-This project was developed as part of a Web 2 module to practice:
+Open the project using your preferred IDE.
 
-Java web development
+### 3. Create the database
 
-MVC concepts
+Create a MySQL database and import the SQL file provided with the project.
 
-Front-end integration with Java backend
+Example:
 
-👤 Author
+```sql
+CREATE DATABASE cozastore;
+```
 
-Dilmin Fernando
+Update the database connection details in the JDBC configuration.
+
+### 4. Build the project
+
+```bash
+ant clean
+ant build
+```
+
+### 5. Deploy
+
+Deploy the generated WAR file to GlassFish or Payara.
+
+### 6. Run
+
+Open your browser and navigate to:
+
+```
+http://localhost:8080/CozaStore
+```
+
+---
+
+## Main Modules
+
+- Authentication
+- Products
+- Categories
+- Shopping Cart
+- Checkout
+- Orders
+- Customer Profile
+- Admin Dashboard
+
+---
+
+## Future Improvements
+
+- Payment Gateway Integration
+- Email Notifications
+- Wishlist
+- Product Reviews
+- Inventory Management
+- REST API
+- JWT Authentication
+- Role-Based Authorization
+- Order Tracking
+
+---
+
+## Learning Objectives
+
+This project demonstrates:
+
+- Java EE Development
+- MVC Design Pattern
+- JDBC Database Connectivity
+- Session Management
+- CRUD Operations
+- Web Application Development
+- E-commerce Business Logic
+
+---
+
+## Author
+
+**Dilmin Fernando**
+
+Software Engineer | Java Developer | Full Stack Developer
+
+---
+
+## License
+
+This project is intended for educational and learning purposes.
