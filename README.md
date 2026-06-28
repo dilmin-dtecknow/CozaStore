@@ -16,6 +16,7 @@ It follows a basic layered structure and includes front-end and back-end compone
 - NetBeans project structure
 
 ## 📂 Project Structure
+```
 CozaStore/
 │
 ├── src/ # Java source files (servlets, logic)
@@ -25,6 +26,7 @@ CozaStore/
 ├── nbproject/ # NetBeans project configuration
 ├── build.xml # Ant build configuration
 └── README.md
+```
 
 ## ⚙️ Features
 - Product listing interface
